@@ -94,7 +94,7 @@ function create_file(this_) {
     $("#dummy_a").attr("href", "data:text/csv;charset=UTF-8," + encodeURIComponent(csv_string));
     // console.log("Downloading...");
     $("#dummy_a").trigger( "click" );
-    $("#dummy_a").html( "Descargar Órdenes Recientes" );
+    $("#dummy_a").html( "Descargar Ventas Recientes" );
 }
 
 function download_recent_orders(this_) {
