@@ -35,6 +35,8 @@ function pr_users_me(data) {
     full_data['nickname'] = data['nickname'];
     full_data['id'] = data['id'];
     console.log( full_data );
+    $('#authorize').hide();
+    $('#tool').show();
     refresh();
 }
 
