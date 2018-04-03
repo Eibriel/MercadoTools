@@ -3,6 +3,13 @@
 	<head>
 		<title>MercadoTools</title>
         <meta charset="utf-8" />
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-WRR6X8P');</script>
+		<!-- End Google Tag Manager -->
         <meta name="description" content="Herramientas para usuarios profesionales de MercadoLibre">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Eibriel">
@@ -35,12 +42,22 @@ margin-top: 1em;
 </head>
 <body>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRR6X8P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <h1>MercadoTools</h1>
 <div id="authorize">
 <p><a href="https://auth.mercadolibre.com.ar/authorization?response_type=token&client_id=5705454449240784">Iniciar Sesión en MercadoLibre</a></p>
 </div>
 
 <h2 id="nickname"></h2>
+<div id="orders"></div>
+
+<p><a id="recent_orders_button" href="#" onclick="download_recent_orders(this);return false;">Obtener Órdenes Recientes</a></p>
+
+<p><a id="dummy_a" href="#" download="recent_orders.csv"></a></p>
 
 <footer>
 Eibriel - 2018<br>
